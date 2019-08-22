@@ -10,9 +10,6 @@ jobs:
       - run:
           name: install module
           command: yarn
-      - run:
-          name: run node program
-          command: node main.js
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
