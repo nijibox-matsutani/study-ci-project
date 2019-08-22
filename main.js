@@ -1,4 +1,6 @@
-console.log('hello world');
-const name = 'taku';
-const age = 21;
-console.log(`${name}の年齢は${age}です`);
+const express = require('express')
+const app = express()
+
+app.get('/', (req, res) => res.send('Hello World!'))
+
+app.listen(3000, () => console.log('Example app listening on port 3000!'))
