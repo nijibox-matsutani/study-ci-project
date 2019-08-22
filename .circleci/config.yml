@@ -5,4 +5,6 @@ jobs:
       - image: circleci/node:12.6.0
     steps:
       - checkout
-      - run: echo "hello world"
+      - run:
+          name: run node program
+          command: node main.js
